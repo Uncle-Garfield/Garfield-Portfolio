@@ -21,6 +21,7 @@ body {
     width: 100%;
     padding: 22px 7%;
     z-index: 1000;
+    background: #0b0f14;
 }
 
 .navbar {
