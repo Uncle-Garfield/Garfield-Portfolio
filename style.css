@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,9 +11,7 @@ body {
     color: #ffffff;
 }
 
-
-/* Navigation */
-
+/* NAVIGATION */
 .site-header {
     position: fixed;
     top: 0;
@@ -56,17 +54,13 @@ body {
     color: red;
 }
 
-
-/* Main */
-
+/* MAIN */
 #page-content {
     min-height: 100vh;
     padding: 0 7%;
 }
 
-
-/* Hero */
-
+/* HERO / HOME */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -119,8 +113,7 @@ body {
     color: white;
 }
 
-
-/* Profile image */
+/* PROFILE IMAGE */
 
 .hero-image {
     flex-shrink: 0;
@@ -138,9 +131,7 @@ body {
     object-fit: cover;
 }
 
-
-/* Footer */
-
+/* FOOTER */
 .site-footer {
     padding: 25px 7%;
     text-align: center;
@@ -148,8 +139,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* About section */
-
+/* ABOUT */
 .about-section {
     width: 100%;
     min-height: 100vh;
@@ -294,8 +284,7 @@ body {
     line-height: 1.7;
 }
 
-/* Skills */
-
+/* SKILLS */
 .skills-section {
     width: 100%;
     min-height: 100vh;
@@ -444,8 +433,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projects */
-
+/* PROJECTS */
 .projects-section {
     width: 100%;
     min-height: 100vh;
@@ -571,7 +559,6 @@ body {
     transform: translateX(5px);
 }
 
-
 /* COMING SOON */
 
 .projects-coming-soon {
@@ -614,7 +601,6 @@ body {
     line-height: 1.7;
 }
 
-/* Contacts */
 /* CONTACT SECTION */
 
 .contact-section {
@@ -633,7 +619,6 @@ body {
     gap: clamp(3rem, 7vw, 6rem);
     align-items: start;
 }
-
 
 /* CONTACT INFORMATION */
 
@@ -824,6 +809,33 @@ body {
     opacity: 0.9;
 }
 
+/* PAGE TRANSITIONS */
+
+#page-content > section {
+    animation: pageFadeIn 0.45s ease both;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPECT REDUCED MOTION PREFERENCES */
+
+@media (prefers-reduced-motion: reduce) {
+    #page-content > section {
+        animation: none;
+    }
+}
+
+/* RESPONSIVE DESIGN */
 
 /* CONTACT — RESPONSIVE */
 
@@ -859,8 +871,7 @@ body {
     }
 }
 
-
-/* PROJECTS — RESPONSIVE  */
+/* PROJECTS — RESPONSIVE */
 
 @media (max-width: 800px) {
 
@@ -1000,38 +1011,7 @@ body {
     }
 }
 
-/* ========================================
-   PAGE TRANSITIONS
-======================================== */
-
-#page-content > section {
-    animation: pageFadeIn 0.45s ease both;
-}
-
-@keyframes pageFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* Respect reduced-motion preferences */
-
-@media (prefers-reduced-motion: reduce) {
-    #page-content > section {
-        animation: none;
-    }
-}
-
-/* ========================================
-   MOBILE HOME + NAVIGATION
-======================================== */
+/* MOBILE HOME + NAVIGATION */
 
 @media (max-width: 768px) {
 
@@ -1042,9 +1022,7 @@ body {
         overflow-x: hidden;
     }
 
-    /* -------------------------------
-       NAVIGATION
-    -------------------------------- */
+    /* Navigation */
 
     .site-header {
         width: 100%;
@@ -1074,9 +1052,7 @@ body {
     }
 
 
-    /* -------------------------------
-       HOME
-    -------------------------------- */
+    /* Home */
 
     #page-content {
         width: 100%;
@@ -1129,9 +1105,7 @@ body {
 }
 
 
-/* ========================================
-   SMALL PHONES
-======================================== */
+/* Small Phones */
 
 @media (max-width: 480px) {
 
@@ -1156,4 +1130,3 @@ body {
         height: 350px;
     }
 }
-
