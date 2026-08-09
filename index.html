@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garfield.Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#" class="logo">Garfield</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-page="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contacts</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <main id="page-content">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">Welcome to my Portfolio page</p>
+                <h1>Hi, i'm <span>Se-rena</span></h1>
+                <p class="description">
+                    I'm a student studying Computer Engineering, with interests in
+                    cyber security and a touch of web develoment
+                </p>
+                <a href="#skills" class="cta-button nav-link" data-page="skills">What i've done?</a>
+            </div>
+            <figure class="hero-image"><img src="images/ghost.png"></figure>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about-section" aria-labelledby="about-title">
+            <header class="section-header">
+                <p class="section-eyebrow">About Me</p>
+                <h2 id="about-title">Get to know me better</h2>
+                <p class="section-introduction">
+                    A little about who I am, what I enjoy, and what I'm working toward.
+                </p>
+            </header>
+
+            <div class="about-content">
+
+                <figure class="about-portrait">
+                    <img
+                        src="images/ghost.png"
+                        alt="Portrait of Garfield"
+                    >
+                </figure>
+
+                <article class="about-description">
+                    <header>
+                        <p class="section-eyebrow">Who I Am:</p>
+                        <h3>I'm a student passionate about technology.</h3>
+                    </header>
+
+                    <p>
+                        I really love tech alot,
+                        software development, and cybersecurity. I enjoy
+                        learning how things work, building projects, and
+                        developing new technical skills. I am very curious.
+                    </p>
+
+                    <p>
+                        I'm particularly interested in web development and
+                        cybersecurity, and I'm constantly looking for
+                        opportunities to improve my knowledge through
+                        practical projects and experimentation.
+                    </p>
+
+                    <footer class="about-actions">
+                        <a href="#" class="button button-primary">
+                            Wanna see my CV?
+                        </a>
+
+                        <a href="#projects" class="button button-secondary nav-link" data-page="projects">
+                            My Projects are here
+                        </a>
+                    </footer>
+                </article>
+            </div>
+
+            <aside class="about-highlights" aria-label="Personal highlights">
+                <article class="highlight-card">
+                    <span class="highlight-icon" aria-hidden="true">🎓</span>
+                    <h3>Student</h3>
+                    <p>
+                        Continuously learning and expanding my technical
+                        and academic knowledge. my curiousity keeps me going.
+                    </p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="highlight-icon" aria-hidden="true">💻</span>
+                    <h3>Web Developer</h3>
+                    <p>
+                        I actually build really good websites, my imagination
+                        tends to run wild.
+                    </p>
+                </article>
+
+                <article class="highlight-card">
+                    <span class="highlight-icon" aria-hidden="true">🔐</span>
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        I have a good knowledge on how to protect systems.
+                        And yeah, I like to find vulranabilities as well, lol.
+                    </p>
+                </article>
+            </aside>
+        </section>
+
+        <!-- skills -->
+        <section id="skills" class="skills-section" aria-labelledby="skills-title">
+            <header class="section-header">
+                <p class="section-eyebrow">My Skills</p>
+
+                <h2 id="skills-title">
+                    Technologies &amp; areas I work with
+                </h2>
+
+                <p class="section-introduction">
+                    The technologies I'm currently learning, developing,
+                    and exploring through practical projects.
+                </p>
+            </header>
+
+            <div class="skills-grid">
+                <article class="skill-category">
+                    <header class="skill-category-header">
+                        <span class="skill-number">01</span>
+
+                        <div>
+                            <p class="skill-category-label">
+                                Web Development
+                            </p>
+
+                            <h3>Building for the web</h3>
+                        </div>
+                    </header>
+
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>Advanced</span>
+                            </div>
+
+                            <div class="skill-level" aria-label="HTML skill level: advanced">
+                                <span class="skill-level-fill skill-html"></span>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>Intermediate</span>
+                            </div>
+
+                            <div class="skill-level" aria-label="CSS skill level: intermediate">
+                                <span class="skill-level-fill skill-css"></span>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>Learning</span>
+                            </div>
+
+                            <div class="skill-level" aria-label="JavaScript skill level: learning">
+                                <span class="skill-level-fill skill-javascript"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+
+                <article class="skill-category">
+                    <header class="skill-category-header">
+                        <span class="skill-number">02</span>
+
+                        <div>
+                            <p class="skill-category-label">
+                                Programming
+                            </p>
+
+                            <h3>Logic &amp; problem solving</h3>
+                        </div>
+                    </header>
+
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>Learning</span>
+                            </div>
+
+                            <div class="skill-level" aria-label="Python skill level: learning">
+                                <span class="skill-level-fill skill-python"></span>
+                            </div>
+                        </li>
+
+                        <li class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>Learning</span>
+                            </div>
+
+                            <div class="skill-level" aria-label="JavaScript programming skill level: learning">
+                                <span class="skill-level-fill skill-javascript-programming"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+
+                <article class="skill-category skill-category-wide">
+                    <header class="skill-category-header">
+                        <span class="skill-number">03</span>
+                        <div>
+                            <p class="skill-category-label">
+                                Cybersecurity
+                            </p>
+
+                            <h3>Security &amp; systems</h3>
+                        </div>
+                    </header>
+
+                    <ul class="security-skills">
+                        <li>
+                            <span aria-hidden="true">⌘</span>
+                            Networking
+                        </li>
+
+                        <li>
+                            <span aria-hidden="true">⌘</span>
+                            Linux
+                        </li>
+
+                        <li>
+                            <span aria-hidden="true">⌘</span>
+                            Web Security
+                        </li>
+
+                        <li>
+                            <span aria-hidden="true">⌘</span>
+                            Vulnerability Assessment
+                        </li>
+
+                        <li>
+                            <span aria-hidden="true">⌘</span>
+                            Security Fundamentals
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-title">
+            <header class="section-header">
+                <p class="section-eyebrow">My Projects</p>
+
+                <h2 id="projects-title">
+                    Things I'm building &amp; exploring
+                </h2>
+
+                <p class="section-introduction">
+                    A collection of projects and experiments I'm working on
+                    as I continue developing my skills.
+                </p>
+            </header>
+
+            <div class="projects-content">
+                <article class="featured-project">
+                    <figure class="project-preview">
+                        <div class="project-placeholder" aria-hidden="true">
+                            <span>&lt;/&gt;</span>
+                        </div>
+
+                        <figcaption class="sr-only">
+                            Preview of Garfield's personal portfolio website
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-details">
+                        <p class="project-number">01 / CURRENT PROJECT</p>
+                        <h3>Personal Portfolio</h3>
+
+                        <p class="project-description">
+                            My personal portfolio website, built from scratch
+                            while learning and improving my web development
+                            skills. It is designed as a responsive single-page
+                            experience with dynamically changing content.
+                        </p>
+
+                        <ul class="project-technologies" aria-label="Technologies used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <a href="#" class="project-link">
+                            You're looking at it <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <aside class="projects-coming-soon" aria-labelledby="coming-soon-title">
+                    <span class="coming-soon-icon" aria-hidden="true">+</span>
+
+                    <h3 id="coming-soon-title">
+                        More projects coming soon
+                    </h3>
+
+                    <p>
+                        I'm still learning, experimenting, and building.
+                        This section will grow as I create more projects
+                        and take on bigger challenges. Just dey wii me.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <header class="section-header">
+                <p class="section-eyebrow">Get In Touch</p>
+
+                <h2 id="contact-title">
+                    Let's build something together.
+                </h2>
+
+                <p class="section-introduction">
+                    Have a question, an idea, or just want to connect?
+                    Send me a message and I'll get back to you.
+                </p>
+            </header>
+
+            <div class="contact-content">
+                <aside class="contact-information" aria-labelledby="contact-info-title">
+                    <header>
+                        <p class="contact-label">Contact</p>
+
+                        <h3 id="contact-info-title">
+                            Talk to me biko.
+                        </h3>
+                    </header>
+
+                    <p>
+                        I'm always open to learning, discussing technology,
+                        collaborating on projects, or connecting with other
+                        people interested in the field. Also if it's money, involve me.
+                    </p>
+
+                    <address class="contact-details">
+                        <a href="mailto:your-email@example.com">
+                            <span class="contact-icon" aria-hidden="true">@</span>
+
+                            <span>
+                                <small>Email</small>
+                                serenaawanta2003@gmail.com
+                            </span>
+                        </a>
+
+                        <a href="#" aria-label="Visit my GitHub profile">
+                            <span class="contact-icon" aria-hidden="true">GH</span>
+
+                            <span>
+                                <small>GitHub</small>
+                                ...
+                            </span>
+                        </a>
+
+                        <a href="#" aria-label="Visit my LinkedIn profile">
+                            <span class="contact-icon" aria-hidden="true">in</span>
+
+                            <span>
+                                <small>LinkedIn</small>
+                                ...
+                            </span>
+                        </a>
+                    </address>
+                </aside>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is this about?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+                        Send Message
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Garfield. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
