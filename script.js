@@ -4,10 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const pages = document.querySelectorAll("#page-content > section");
 
     function showPage(pageId) {
-        window.scrollTo({
-            top:0,
-            behavior: "smooth"
-        })
 
         pages.forEach((page) => {
             if (page.id === pageId) {
@@ -28,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 link.removeAttribute("aria-current");
             }
         });
+
+        window.scrollTo(0,0);
     }
 
     navLinks.forEach((link) => {
