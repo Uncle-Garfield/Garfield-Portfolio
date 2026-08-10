@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const pages = document.querySelectorAll("#page-content > section");
 
     function showPage(pageId) {
+        window.scrollTo({
+            top:0,
+            behavior: "smooth"
+        })
 
         pages.forEach((page) => {
             if (page.id === pageId) {
