@@ -284,6 +284,10 @@ body {
     line-height: 1.7;
 }
 
+.about-actions .cta-button{
+    width: fit-content;
+}
+
 /* SKILLS */
 .skills-section {
     width: 100%;
